@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Secret Hitler</title>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.fittext.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/secretHitlerIcon_small.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="mainblock">
+        <div id="button_box">
+            <span>                
+                <button type="submit" name="createGame">VYTVOŘIT HRU</button>             
+            </span>
+            <span>
+                <button type="submit" name="joinGame">PŘIPOJIT SE</button>
+            </span>
+        </div>
+
+        <hr class="spacer"></hr>
+
+        <div id="textbox">
+            <div id="float_header"><h1>Na úvod:</h1></div>
+            <p>Na tuto hru jsem já s mými přáteli narazil před nedávnem. Rozhodl jsem se tedy, že bych rád upravil tuto verzi.
+                Rád bych si zahrál s vícero přáteli, ale poněvadž originální hra dovoluje určité maximum, upravil jsem hru
+                a přejmenoval ji na <strong>Secret Levičák</strong>. Hra zároveň obsahuje mechaniky převzaté od Jason Williamse,
+                a také možnost anonymně hlasovat pro prezidenta, čímž se dodá fašistům více tajemnosti a více možností intriky, což
+                ostatně platí pro všechny hráče v této hře. Shromážděte kamarády, a najděte Secret Levičáka!
+            </p>
+        </div>
+
+        <div id="textbox">
+            <div id="float_header"><h1>Jak to funguje:</h1></div>
+            <p>Jeden hráč ve skupině vybere možnost „Vytvořit hru“. Tím se vytvoří náhodný 4 písmený
+                kód herní místnosti. Každý další hráč vybere možnost „Připojit se ke hře“ a zadá kód místnosti.
+                Hra požádá každého hráče o jméno a poté jej nechá vstoupit do místnosti. Zakladatel místnosti vybere „Hrát!“ 
+                Role budou náhodně rozdány a žádné další nemohou být přidány hráči. Hra nastaví všechny role a hlasování sama.
+            </p>
+        </div>
+    </div>
+
+    <div id="foot-placeholder"></div>
+</body>
+
+
+
+
+<script>
+    $(function(){
+        $("#nav-placeholder").load("header.html");
+    });
+
+    $(function(){
+        $("#foot-placeholder").load("footer.html");
+    });
+
+    jQuery("h1").fitText();
+</script>
+</html>
